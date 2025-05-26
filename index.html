@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color:
+</style>
+
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+           <IMG SRC="https://th.bing.com/th/id/OIP.ltENXF0rLgIP8-_hgl-HBwHaHa?pid=ImgDet&w=164&h=164&c=7&dpr=1.5" width=150"height="150"  ALIGN="MIDDLE" HSPACE=30>
+                <strong><B1>BIENVENIDOS A ADVENTURE AWAITS</B1></strong >
+                <br>
+                  <br>
+            <button class="btn-primary" id="btn-inicio">Descubre nuestros destinos</button>
+        </section>
+        <section id="destinos" style="display: none;">
+    <center>
+        <h2>Destinos populares</h2>
+    <ul>
+        
+            <h3>CANCUN-QUINTANA ROO</h3>
+            <p>UN LUGAR CERCA DEL CIELO.</p>
+            <button class="btn-secondary" onclick="mostrarInfo('cancun')">Ver más</button>
+            <div id="info-cancun" style="display: none;">
+                <br>
+                <img src="https://images.odigoo.com/df4f9331-8c0a-43c6-aef6-7eaf225fea60/images/posts/que-hacer-en-cancun-35-actividades-para-tu-viaje/webp/header-que-hacer-en-cancun-35-actividades-para-tu-viaje-z6nl-s.webp" width="350" width="300" alt="Cancun">
+                <p>Cancun es una ciudad ubicada en la península de Yucatán, conocida por sus playas de ensueño y su rica historia maya.</p>
+            </div>
+        
+            <h3>PUERTO VALLARTA</h3>
+            <p>La ciudad eterna con historia y arquitectura impresionante.</p>
+            <button class="btn-secondary" onclick="mostrarInfo('puerto-vallarta')">Ver más</button>
+            <div id="info-puerto-vallarta" style="display: none;">
+                <br>
+                <img src="https://jalisco.quadratin.com.mx/www/wp-content/uploads/2024/06/Puerto-Vallarta.png" width="350" height="270" alt="Puerto Vallarta">
+                <p>Puerto Vallarta es una ciudad costera ubicada en el estado de Jalisco, conocida por sus playas y su vibrante vida nocturna.</p>
+            </div>
+    
+            <h3>SAN CRISTOBAL DE LAS CASAS</h3>
+            <p>San Cristóbal, tu destino. Nosotros, tu aventura.</p>
+            <button class="btn-secondary" onclick="mostrarInfo('SAN CRISTOBAL DE LAS CASAS')">Ver más</button>
+            <div id="info-SAN CRISTOBAL DE LAS CASAS" style="display: none;">
+                <br>
+                <img src="https://turismosocial.com.mx/wp-content/uploads/2018/01/San-Cristobal-de-las-Casas-597b7d185f9b58928bd90281.jpg" width="350" height="280" alt="SAN CRISTOBAL DE LAS CASAS">
+                <p>San Cristóbal de las Casas es una ciudad colonial ubicada en el estado de Chiapas, México, conocida por su rica historia, arquitectura colonial y su entorno natural impresionante.</p>
+
+
+            </div>
+            
+            <h3>MICHOACAN</h3>
+            <p>Michoacan el hogar de la mariposa monarca</p>
+            <button class="btn-secondary" onclick="mostrarInfo('MICHOACAN')">Ver más</button>
+            <div id="info-MICHOACAN" style="display: none;">
+                <br>
+                <img src="https://www.eluniversal.com.mx/resizer/v2/AWKUZTVRGNHKBMZKH3WY7QQTVE.jpg?auth=fcab7ddc5ca3b61fe755c9fedbbeac124fc86cd3c4fb6c438be5daff0ff1653a&smart=true&width=1100&height=666" width="350" height="300" alt="MICHOACAN">
+                <p>Te guiamos para que disfrutes al maximo tu visita a michoacan. Desde inmersiones culturales hasta emocionantes aventuras al aire libre. ¡Es hora de empezar a explorar!</p>
+
+            </div>
+                <h3>ESTADO DE MEXICO</h3>
+            <p>Teotihuacán: Donde la historia cobra vida. Descubre la magia de la ciudad de los dioses</p>
+            <button class="btn-secondary" onclick="mostrarInfo('ESTADO DE MEXICO')">Ver más</button>
+            <div id="info-ESTADO DE MEXICO" style="display: none;">
+                <br>
+                <img src="https://www.civitatis.com/f/mexico/teotihuacan/teotihuacan.jpg" width="350" height="300"  alt="ESTADO DE MEXICO">
+                <p>Teotihuacán es una de las ciudades más emblemáticas de Mesoamérica, conocida por sus impresionantes pirámides y su rica historia cultural. Ubicada a 40 km al noreste de la Ciudad de México, esta ciudad antigua es un destino imperdible para cualquier viajero.</p>
+         </div>
+            
+
+                  
+                
+        <!-- ... -->
+    </ul>
+</section>
+</center>
+
+<script>
+    function mostrarInfo(id) {
+        const elemento = document.getElementById(`info-${id}`);
+        if (elemento.style.display === 'none') {
+            elemento.style.display = 'block';
+        } else {
+            elemento.style.display = 'none';
+        }
+    }
+</script>
+        <section id="paquetes" style="display: none;">
+            <h2>Paquetes de viaje</h2>
+            <ul>
+                    <h3>CANCUN</h3>
+                    <h4>Paquete de Sol y Playa</h4>
+                    <li> 4 noches en un hotel de 5 estrellas en la zona hotelera de Cancun, incluyendo:</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Almuerzo en un restaurante de mariscos</li>
+                    <li>Cena en un restaurante de especialidades internacionales</li>
+                    <li>Actividades en la playa, como snorkel o kayak</li>
+                     <li> Precio: $4,500 MXN por persona</li>
+                     <br>
+                    <button class="btn-primary">Reservar ahora</button>
+                    <h4>Paquete de Aventura</h4>
+                    <li> 4 noches en un hotel de 5 estrellas en la zona hotelera de Cancun, incluyendo:</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Actividades de aventura, como paracaidismo o buceo</li>
+                    <li>Visita a la isla de Cozumel</li>
+                    <li>Cena en un restaurante de especialidades mexicanas</li>
+                     <li> Precio: $3,800 MXN por persona</li>
+                    </br>
+                     <button class="btn-primary">Reservar ahora</button>
+            
+            
+                    <h3>PUERTO VALLARTA</h3>
+                    <h4>Paquete de Romance</h4>
+                    <li>3 noches en un hotel de 4 estrellas en la zona romántica de Puerto Vallarta, incluyendo:</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Cena romántica en un restaurante de especialidades internacionales</li>
+                    <li>Paseo en barco por la bahía</li>
+                    <li>Masaje de pareja</li>
+                     <li> Precio: $4,000 MXN por persona</li>
+                     <br>
+                    <button class="btn-primary">Reservar ahora</button>
+                    <br>
+                <h4>Paquete de Actividades</h4>
+                    <li>5 noches en un hotel de 5 estrellas en la zona romántica de Puerto Vallarta, incluyendo:</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Actividades al aire libre, como senderismo o kayak</li>
+                    <li>Visita a la isla de Río Cuale</li>
+                    <li>Cena en un restaurante de especialidades mexicanas</li>
+                     <li> Precio: $5,500 MXN por persona</li>
+                     <br>
+                    <button class="btn-primary">Reservar ahora</button>
+                     <br>
+                    <h3>SAN CRISTOBAL DE LAS CASAS</h3>
+                    <h4>Paquete Cultural</h4>
+                    <li>5 noches en un hotel de 5 estrellas en el centro de San Cristóbal, incluyendo:</li>
+                    <li>Visita a la catedral de San Cristóbal</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Visita al mercado de artesanías</li>
+                     <li>Cena en un restaurante de especialidades chiapanecas</li>
+                     <li>Precio: $5,000 MXN por persona</li>
+                       <br>
+                    <button class="btn-primary">Reservar ahora</button>
+                       <br>
+                       <h4>Paquete de Aventura</h4>
+                    <li>3 noches en un hotel de 4 estrellas en el centro de San Cristóbal, incluyendo:</li>
+                    <li>Actividades al aire libre, como senderismo o ciclismo</li>
+                    <li>Visita a las lagunas de Montebello</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Cena en un restaurante de especialidades mexicanas</li>
+                    <li>Precio: 4,000 MXN por persona</li>
+                     <br>
+                    <button class="btn-primary">Reservar ahora</button>
+                     <br>
+                    <h3>MICHOACAN</h3>
+                    <h4>Paquete de Naturaleza</h4>
+                    <li> 6 noches en un hotel de 5 estrellas en el centro de Morelia, incluyendo:</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Visita al santuario de la mariposa monarca</li>
+                    <li>Actividades al aire libre, como senderismo o ciclismo</li>
+                    <li>Cena en un restaurante de especialidades michoacanas</li>
+                    <li>Precio: $5,800 MXN por persona</li>
+                     <br>
+                    <button class="btn-primary">Reservar ahora</button>
+                     <br>
+                    <h4>Paquete Cultural</h4>
+                    <li>4 noches en un hotel de 4 estrellas en el centro de Morelia, incluyendo:</li>
+                    <li>Visita al centro histórico de Morelia</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Visita al mercado de artesanías</li>
+                    <li>Cena en un restaurante de especialidades michoacanas</li>
+                    <li>Precio: $4,900 MXN por persona</li>
+                     <br>
+                    <button class="btn-primary">Reservar ahora</button>
+                    <br>
+                    <h3>ESTADO DE MEXICO</h3>
+                    <h4>Paquete de Arqueología</h4>
+                    <li>4 noches en un hotel de 5 estrellas en Teotihuacán, incluyendo:</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Visita a la pirámide del Sol y la pirámide de la Luna</li>
+                    <li>Visita al museo de sitio de Teotihuacán</li>
+                    <li>Cena en un restaurante de especialidades mexicanas</li>
+                    <li>Precio: $4,000 MXN por persona</li>
+                     <br>
+                    <button class="btn-primary">Reservar ahora</button>
+                     <br>
+                    <h4>Paquete de Aventura</h4>
+                    <li>5 noches en un hotel de 4 estrellas en Teotihuacán, incluyendo:</li>
+                    <li>Desayuno buffet diario</li>
+                    <li>Actividades al aire libre, como senderismo o ciclismo</li>
+                    <li>Visita a la zona arqueológica de Teotihuacán</li>
+                    <li>Cena en un restaurante de especialidades mexicanas</li>
+                    <li>Precio: $4500 MXN por persona</li>
+                     <br>
+                    <button class="btn-primary">Reservar ahora</button>
+
+
+
+            </ul>
+        </section> 
+        <section id="contacto" style="display: none;">
+            <h2>Contáctanos</h2>
+            <p>Rellena el formulario para obtener más información.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                <button class="btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+    <center><p>&copy; 2025 AGENCIA DE VIAJES </p></center>
+    </footer>
+
+    <script>
+        const btnInicio = document.getElementById('btn-inicio');
+        const secciones = document.querySelectorAll('section');
+
+        btnInicio.addEventListener('click', () => {
+            secciones.forEach((seccion) => {
+                seccion.style.display = 'none';
+            });
+            document.getElementById('destinos').style.display = 'block';
+        });
+
+        document.querySelectorAll('header nav a').forEach((link) => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const id = link.getAttribute('href').replace('#', '');
+                secciones.forEach((seccion) => {
+                    seccion.style.display = 'none';
+                });
+                document.getElementById(id).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
